@@ -62,3 +62,30 @@ git push -u origin your-branch-name
 ```
 
 Do not add local configuration, passwords, `.idea/`, or `target/` to Git. Avoid pushing directly to `main` when the other collaborator may also be changing it.
+
+## Git Workflow
+
+### Before Starting Work
+
+Pull the latest changes from GitHub before making any changes locally.
+
+```bash
+git pull origin main
+```
+
+### After Finishing Work
+
+Save and push your changes to GitHub.
+
+```bash
+git add .
+git commit -m "Describe your changes"
+git push origin main
+```
+
+### Quick Reference
+
+- **Before work:** `git pull origin main`
+- **After work:** `git add .` → `git commit -m "message"` → `git push origin main`
+- Always write a meaningful commit message describing your changes.
+- Check `git status` before committing to review modified files.
